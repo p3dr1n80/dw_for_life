@@ -1,0 +1,27 @@
+{
+	"name": "dim_costs",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLServer_Localhost",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "local_costs",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "dim_costs"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

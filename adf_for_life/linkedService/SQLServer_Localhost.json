@@ -1,0 +1,16 @@
+{
+	"name": "SQLServer_Localhost",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=DESKTOP-9P7JDSE;initial catalog=dw_for_life;user id=for_life",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI0MjM3OTM4YS05ZTg5LTQwZWYtYTIwOS0yMWRjMjdmNWQ3NDAiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationForLife",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

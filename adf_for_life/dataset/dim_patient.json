@@ -1,0 +1,73 @@
+{
+	"name": "dim_patient",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLServer_Localhost",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "name",
+				"type": "varchar"
+			},
+			{
+				"name": "birth",
+				"type": "date"
+			},
+			{
+				"name": "gender",
+				"type": "varchar"
+			},
+			{
+				"name": "zip_code",
+				"type": "varchar"
+			},
+			{
+				"name": "address",
+				"type": "varchar"
+			},
+			{
+				"name": "number",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "district",
+				"type": "varchar"
+			},
+			{
+				"name": "city",
+				"type": "varchar"
+			},
+			{
+				"name": "state",
+				"type": "varchar"
+			},
+			{
+				"name": "state_description",
+				"type": "varchar"
+			},
+			{
+				"name": "complement",
+				"type": "varchar"
+			},
+			{
+				"name": "status",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "dim_patient"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

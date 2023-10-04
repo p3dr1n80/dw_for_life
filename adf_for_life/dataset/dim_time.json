@@ -1,0 +1,88 @@
+{
+	"name": "dim_time",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLServer_Localhost",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "cod_day",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "date",
+				"type": "date"
+			},
+			{
+				"name": "cod_week",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "name_day_week",
+				"type": "varchar"
+			},
+			{
+				"name": "cod_month",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "name_month",
+				"type": "varchar"
+			},
+			{
+				"name": "cod_month_year",
+				"type": "varchar"
+			},
+			{
+				"name": "name_month_year",
+				"type": "varchar"
+			},
+			{
+				"name": "cod_quarter",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "name_quarter",
+				"type": "varchar"
+			},
+			{
+				"name": "cod_quarter_year",
+				"type": "varchar"
+			},
+			{
+				"name": "cod_semester",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "name_semester",
+				"type": "varchar"
+			},
+			{
+				"name": "cod_semester_year",
+				"type": "varchar"
+			},
+			{
+				"name": "year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "day_type",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "dim_time"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

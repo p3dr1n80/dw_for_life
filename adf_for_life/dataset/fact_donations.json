@@ -1,0 +1,39 @@
+{
+	"name": "fact_donations",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLServer_Localhost",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id_contributor",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "id_time",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "values_donated",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "top_contributors",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "fact_donations"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,17 @@
+{
+	"name": "dim_services_prd",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLServer_Prd",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "dim_services"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

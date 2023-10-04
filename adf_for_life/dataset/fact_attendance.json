@@ -1,0 +1,47 @@
+{
+	"name": "fact_attendance",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLServer_Localhost",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id_patient",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "id_organizational",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "id_services",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "id_time",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "most_serviced_locations",
+				"type": "varchar"
+			},
+			{
+				"name": "attendance_by_age",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "fact_attendance"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

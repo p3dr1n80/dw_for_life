@@ -1,0 +1,35 @@
+{
+	"name": "dim_organizational",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLServer_Localhost",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "name",
+				"type": "varchar"
+			},
+			{
+				"name": "level",
+				"type": "varchar"
+			},
+			{
+				"name": "speciality",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "dim_organizational"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
